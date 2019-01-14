@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.col-3{
+    width: calc(100%/3);
+    padding: 20px;
+}
+
+.col-3 img{
+    height: 50%;
+}
+
+.col-6 {
+    width: 60%;
+    padding: 20px;
+}
+
+.col-6 .col-6{
+  padding: 5px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+
+.text-center{
+  text-align: center;
+}
+
+.p-20{
+  padding: 20px;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.w-100{
+  width: 100%;
+}
+
+
+
+.line{
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+* {
+  font-famil: 'verdana';
+}
+table {
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid grey;
+}
+th, td {
+  border: 1px solid #ccc;
+  font: 13px 'verdana';
+  padding: 5px;
+}
+th {
+  font-weight: bold
+}
+table [type="text"],
+table [type="email"],
+table [type="number"] {
+  display: block;
+  width: 90px;
+}
+
+.reviews{
+  padding: 50px;
+}
+
+input[type="button"]{
+
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background: white;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+
+}
+
+input:focus{
+  box-shadow: none;
+  outline: none;
+}
+/*responsive changes*/
+
+@media screen and (max-width: 1280px) {
+  .footer{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    .col-3, .col-6{
+      width: 100%;
+    }
+}

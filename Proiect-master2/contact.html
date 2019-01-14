@@ -1,0 +1,97 @@
+<!-- taguri semantice folosite: header, nav, section, footer -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<title>Ana Lutu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fisiere/index.css">
+<link rel="stylesheet" href="fisiere/style.css">
+
+
+</head>
+<body>
+
+    <header class="header">
+
+        <img src="image/Banner.jpg" id="indexMainImg" alt="Imagine indisponibila">
+    </header>
+    <div id="navbar">
+        <img src="image/navbar-icon.png" id="navbar-icon-menu" onclick="showSidebar()" alt="Imagine indisponibila">
+    </div>
+
+    <section id="sidebar">
+		<h1>haha</h1>
+        <a class="cancel-button" onclick="hideSidebar()"> x </a>
+        <div class="navbarElement">
+            <a href="index.html" class="havbarLinkElement">Home</a>
+        </div>
+        <nav class="navbarElement">
+            <div class="havbarLinkElement">
+                Produse >
+                <div class='sub-menu'>
+                    <div class='sub-menu-item'>
+                        <a href="Anastasia.html" class="dileri">Anastasia</a>
+                    </div>
+                    <div class='sub-menu-item'>
+                        <a href="katvonD.html" class="dileri">Kat Von D</a>
+                    </div>
+                    <div class='sub-menu-item'>
+                        <a href="kylie.html" class="dileri">Kylie</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbarElement">
+            <a href="ttt.html" class="havbarLinkElement">Comanda</a>
+        </div>
+		<div class="navbarElement">
+            <a href="contact.html" class="havbarLinkElement">Contact</a>
+        </div>
+    </section>
+
+
+
+
+
+<div class="reviews">
+
+    <div class="row">
+      <div class="col-3 m-auto text-center">
+        <h2>Completează formularul</h2>
+        <input  class="w-100" type="text" id="nume" placeholder="Nume">
+        <br>
+        <input  class="w-100" type="text" id="prenume" placeholder="Prenume">
+        <br>
+        <input  class="w-100" type="email" id="email" placeholder="Email">
+        <br>
+        <input  class="w-100" type="text" id="text" placeholder="Adauga textul tau aici">
+        <br>
+        <input type="button" value="Trimite" id="buton" onclick="inputData()">
+        
+      </div>
+    </div>
+
+
+	<h3>Pareri:</h3>
+    <div class="comments"> </div>
+	
+</div>
+
+
+
+
+<footer class="footer">
+  <h2> Ana Lutu</h2>
+</footer>
+
+
+
+
+<script src="fisiere/index.js"></script>
+
+<script src="fisiere/AJAX_ANA.js"></script>
+
+</body>
+</html>

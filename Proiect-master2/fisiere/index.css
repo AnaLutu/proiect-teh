@@ -1,0 +1,132 @@
+#navbar {
+	height: 60px;
+    width: 100%;
+    background-color: #aee8ea;
+}
+body {
+	margin: 0;
+	background-color: black;
+}
+
+footer {
+	padding: 20px;
+    text-align: center;
+    background: #da2325;
+	bottom:0;
+}
+.havbarLinkElement {
+	 text-decoration: none;
+    color: black;
+    font-size: 25px;
+    top: 50%;
+    left: -150px;
+    position: relative;
+}
+
+.navbarElement {
+	height: 20%;
+    width: 60%;
+    display: flex;
+	flex-direction: column;
+    position: relative;
+}
+
+#indexMainImg {
+	width: 100%;
+	height: 400px;
+}
+
+.indexMakeUpArtist {
+	width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 30px 70px;
+	border-radius: 30px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+#mainPartOfBody {
+	margin: 0;
+    text-align: center;
+    z-index: 100;
+}
+.Artists {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+#navbar-icon-menu {
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    display: block;
+}
+#sidebar {
+    width: 0;
+    background-color: #da2325;
+    z-index: 1000;
+    height: 600px;
+    position: absolute;
+    transition: 0.3s;
+}
+.cancel-button {
+    right: 10px;
+    position: absolute;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 20px;
+    top: 10px;
+}
+.havbarLinkElement:hover > .sub-menu {
+    display: block;
+    opacity: 1;
+}
+.sub-menu {
+    display: none;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #da2325;
+    left: 210px;
+    z-index: 1001;
+    opacity: 1;
+    border: 10px;
+    border-color:black;
+}
+
+.sub-menu-item {
+    display: flex;
+    flex-direction: row;
+    margin: -40px 0 100px 0;
+}
+
+@media (max-width: 768px)
+{
+    #sidebar {
+        max-width: 200px;
+    }
+    .sub-menu {
+        left: 140px;
+    }
+	section {
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px)
+{
+    section {
+        height: 1200px;
+    }
+}
+.dileri {
+    text-decoration: none;
+    color: black;
+}
+.paragraf {
+    margin: 0 100px;
+}

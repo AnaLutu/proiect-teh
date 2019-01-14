@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html  lang="ro">
+<head>
+    <title>MakeUp</title>
+    <link rel="stylesheet" href="fisiere/index2.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	
+    
+</head>
+<body>
+    <header>
+
+        <img src="image/Banner.jpg" id="indexMainImg" alt="Imagine indisponibila">
+    </header>
+    <div id="navbar">
+        <img src="image/navbar-icon.png" id="navbar-icon-menu" onclick="showSidebar()" alt="Imagine indisponibila">
+		
+    </div>
+
+   
+    <section>
+	 <nav id="sidebar">
+        <a class="cancel-button" onclick="hideSidebar()"> x </a>
+        <div class="navbarElement">
+            <a href="index.html" class="havbarLinkElement">Home</a>
+        </div>
+        <div class="navbarElement">
+            <div class="havbarLinkElement">
+                Produse >
+                <div class='sub-menu'>
+                    <div class='sub-menu-item'>
+                        <a href="Anastasia.html" class="dileri">Anastasia</a>
+                    </div>
+                    <div class='sub-menu-item'>
+                        <a href="katvonD.html" class="dileri">Kat Von D</a>
+                    </div>
+                    <div class='sub-menu-item'>
+                        <a href="kylie.html" class="dileri">Kylie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+		<div class="navbarElement">
+            <a href="ttt.html" class="havbarLinkElement">Comanda</a>
+        </div>
+        <div class="navbarElement">
+            <a href="index.html" class="havbarLinkElement">Contact</a>
+        </div>
+			<h3>haha</h3>
+			
+    </nav>
+	
+        <h1>Adauga in lista de dorinte</h1>
+        <form>
+            <input type="text" id="input-text">
+            <button type="button" id="form-input">Button</button>
+        </form>
+        <div id="lista">
+
+        </div>
+        <div class="deClonat">
+            <div class="paragraf" style="display:block"></div>
+            <div class="cancel">Sterge elementul de mai sus</div>
+        </div>
+		
+    </section>
+	<footer class="footer">
+		<h2> Ana Lutu</h2>
+	</footer>
+    
+    <script src="fisiere/index.js"></script>
+	<script src="fisiere/ttt.js"></script>
+</body>
+
+</html>
